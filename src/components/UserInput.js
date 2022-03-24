@@ -16,7 +16,7 @@ function UserInput(props) {
 
   return (
     <Card className="userinput">
-      <div className="border-solid border-6 border-red-600">
+      <div className="border-solid border-2 border-red-600">
         <form className="flex-col" onSubmit={formSubmitHandler}>
           <label
             className="border-solid border-2 border-red-600"
