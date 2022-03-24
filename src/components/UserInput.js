@@ -19,7 +19,7 @@ function UserInput(props) {
       <div className="border-solid border-6 border-red-600">
         <form className="flex-col" onSubmit={formSubmitHandler}>
           <label
-            className="border-solid border-6 border-red-600"
+            className="border-solid border-2 border-red-600"
             htmlFor="username"
           >
             Username
@@ -28,14 +28,14 @@ function UserInput(props) {
             id="username"
             type="text"
             value={enteredValue}
-            // onChange={setEnteredValue}
+            onChange={(e) => setEnteredValue(e.currentTarget.value)}
           />
           <label htmlFor="age">Age</label>
           <input
             type="number"
             id="age"
             value={enteredValue}
-            // onChange={setEnteredValue}
+            onChange={(e) => setEnteredValue(e.currentTarget.value)}
           />
         </form>
         <button type="submit">Add User</button>
